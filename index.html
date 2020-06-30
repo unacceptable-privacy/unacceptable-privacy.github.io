@@ -65,7 +65,7 @@
                             <i><a href="https://www.ruhr-uni-bochum.de/en" target="_blank">Ruhr University Bochum</a> &amp; <a href="https://www.mpi-sp.org" target="_blank">Max Planck Institute for Security and Privacy</a></i>
                         </p>
                         <p>
-                            <b>tl;dr:</b> A comprehensive study of accidental triggers, i.e., sounds that should not have triggered a voice assistant.
+                            <b>tl;dr:</b> A comprehensive study of accidental triggers of smart speakers.
                         </p>
                     </div>
                 </div>
@@ -79,14 +79,15 @@
             <br>
             <div class="row">
                 <div class="col-sm-7">
-                    <h2><i class="fas fa-cloud-sun-rain"></i>{Accidental trigger}, will it rain today?</h2>
+                    <h2><i class="fas fa-cloud-sun-rain"></i>{Unacceptable}, will it rain today?</h2>
                     <p>
-                        For privacy reasons, voice assistants in smart speakers analyze every sound in their environment for their respective <mark>wake word</mark> like &laquo;Alexa&raquo; or &laquo;Hey Siri&raquo; before uploading the audio stream to the cloud.
-                        The sensitivity of the wake word detection tries to strike a balance between data protection and technical optimization and <b>can be tricked</b> using similar words or sounds resulting in a so-called accidental trigger.
+                        Voice assistants in smart speakers analyze every sound in their environment for their <mark>wake word</mark>, e.g., &laquo;Alexa&raquo; or &laquo;Hey Siri&raquo;, before uploading the audio stream to the cloud.
+                        This supports users' privacy by only capturing the necessary audio and not recording anything else.
+                        The sensitivity of the wake word detection tries to strike a balance between data protection and technical optimization, but <b>can be tricked</b> using similar words or sounds that result in an accidental trigger.
                     </p>
                     <p>
-                        Since July 2019, we measure and analyze these <mark>accidental triggers</mark> of smart speakers.
-                        More specifically, we automated the process of finding accidental triggers and <b>measured the prevalence</b> of accidental triggers across 11 smart speakers from 8 different manufacturers using professional audio datasets and everyday media such as <i class="fas fa-film"></i><b>TV&nbsp;shows</b> and <i class="fas fa-globe-americas"></i><b>newscasts</b>.
+                        In July 2019, we started measuring and analyzing <mark>accidental triggers</mark> of smart speakers.
+                        We automated the process of finding accidental triggers and <b>measured their prevalence</b> across 11 smart speakers from 8 different manufacturers using professional audio datasets and everyday media such as <i class="fas fa-film"></i><b>TV&nbsp;shows</b> and <i class="fas fa-globe-americas"></i><b>newscasts</b>.
                     </p>
                     <p>
 
@@ -110,7 +111,7 @@
                     <h2 style="padding-top: 1rem;"><i class="fas fa-cogs"></i>Setup</h2>
                     <p>
                         Our setup consists of a <i class="fas fa-volume-up"></i><b>loudspeaker</b> that is playing media files from a <i class="fas fa-laptop-code"></i><b>computer</b>.
-                        The LED activity indicators of a group of smart speakers are monitored using <i class="far fa-lightbulb"></i><b>light sensors</b>.
+                        We use <i class="far fa-lightbulb"></i><b>light sensors</b> to monitor the LED activity indicators of a group of smart speakers.
                         All speakers are connected to the Internet over <i class="fas fa-wifi"></i><b>Wi-Fi</b>.
                         To verify the measurement results, we record a video of each measurement via a <i class="fas fa-video"></i><b>webcam</b> with a built-in microphone.
                         Moreover, we record <i class="fas fa-network-wired"></i><b>network traces</b> to analyze the speakers' activity on a network level.
@@ -127,11 +128,11 @@
                         Our setup was able to identify <mark>more than 1,000 sequences</mark> that incorrectly trigger smart speakers.
                         For example, we found that depending on the pronunciation, <mark>&laquo;Alexa&raquo; reacts to the words "unacceptable"</mark> and "election," while &laquo;Google&raquo; often triggers to "OK, cool."
                         &laquo;Siri&raquo; can be fooled by "a city," &laquo;Cortana&raquo; by "Montana," &laquo;Computer&raquo; by "Peter," &laquo;Amazon&raquo; by "and the zone," and &laquo;Echo&raquo; by "tobacco."
-                        We prepared a few <i class="fab fa-youtube"></i><b>videos</b> with examples of such accidental triggers <a href="index.html#examples" target="_self">here</a>.
+                        See <i class="fab fa-youtube"></i><b>videos</b> with examples of such accidental triggers <a href="index.html#examples" target="_self">here</a>.
                     </p>
                     <p>
                         In our paper, we analyze a diverse set of audio sources, explore gender and language biases, and measure the reproducibility of the identified triggers.
-                        To better understand accidental triggers, we describe a way how to craft them artificially and by reverse-engineering the communication channel of an Amazon Echo, we are able to provide novel insights on how commercial companies deal with such problematic triggers in practice.
+                        To better understand accidental triggers, we describe a method to craft them artificially. By reverse-engineering the communication channel of an Amazon Echo, we are able to provide novel insights on how commercial companies deal with such problematic triggers in practice.
                         Finally, we analyze the <i class="fas fa-user-secret"></i><b>privacy implications of accidental triggers</b> and discuss potential mechanisms to improve the privacy of smart speakers.
                     </p>
                 </div>
@@ -401,7 +402,7 @@
                             </p>
                             <p>
                                 <a href="https://www.imdb.com/title/tt1837864/" target="_blank">Game of Thrones - S01E08 - The Pointy End</a>.<br>
-                                <i class="fas fa-tv"></i><b>Kind</b>: TV Show, <i class="far fa-copyright"></i><b>Network</b>: HBO (US), <i class="far fa-calendar-alt"></i><b>Originally Aired</b>: June 5, 2011, <i class="fas fa-info-circle"></i><b>Found</b>: October 23, 2019, <i class="far fa-clock"></i><b>Timestamp</b>: ~42:00.
+                                <i class="fas fa-tv"></i><b>Type</b>: TV Show, <i class="far fa-copyright"></i><b>Network</b>: HBO (US), <i class="far fa-calendar-alt"></i><b>Originally Aired</b>: June 5, 2011, <i class="fas fa-info-circle"></i><b>Found</b>: October 23, 2019, <i class="far fa-clock"></i><b>Timestamp</b>: ~42:00.
                             </p>
                         </div>
                     </div>
@@ -423,7 +424,7 @@
                             </p>
                             <p>
                                 <a href="https://www.imdb.com/title/tt2178798/" target="_blank">Game of Thrones - S03E04 - And Now His Watch Is Ended</a>.<br>
-                                <i class="fas fa-tv"></i><b>Kind</b>: TV Show, <i class="far fa-copyright"></i><b>Network</b>: HBO (US), <i class="far fa-calendar-alt"></i><b>Originally Aired</b>: April 21, 2013, <i class="fas fa-info-circle"></i><b>Found</b>: December 12, 2019, <i class="far fa-clock"></i><b>Timestamp</b>: ~32:10.
+                                <i class="fas fa-tv"></i><b>Type</b>: TV Show, <i class="far fa-copyright"></i><b>Network</b>: HBO (US), <i class="far fa-calendar-alt"></i><b>Originally Aired</b>: April 21, 2013, <i class="fas fa-info-circle"></i><b>Found</b>: December 12, 2019, <i class="far fa-clock"></i><b>Timestamp</b>: ~32:10.
                             </p>
                         </div>
                     </div>
@@ -447,7 +448,7 @@
                             </p>
                             <p>
                                 <a href="https://www.imdb.com/title/tt1627464/" target="_blank">Modern Family - S02E06 - Halloween</a>.<br>
-                                <i class="fas fa-tv"></i><b>Kind</b>: TV Show, <i class="far fa-copyright"></i><b>Network</b>: ABC, <i class="far fa-calendar-alt"></i><b>Originally Aired</b>: October 27, 2010, <i class="fas fa-info-circle"></i><b>Found</b>: December 25, 2019, <i class="far fa-clock"></i><b>Timestamp</b>: ~04:35.
+                                <i class="fas fa-tv"></i><b>Type</b>: TV Show, <i class="far fa-copyright"></i><b>Network</b>: ABC, <i class="far fa-calendar-alt"></i><b>Originally Aired</b>: October 27, 2010, <i class="fas fa-info-circle"></i><b>Found</b>: December 25, 2019, <i class="far fa-clock"></i><b>Timestamp</b>: ~04:35.
                             </p>
                         </div>
                     </div>
@@ -469,7 +470,7 @@
                             </p>
                             <p>
                                 <a href="https://www.imdb.com/title/tt1569106/" target="_blank">Modern Family - S01E13 - Fifteen Percent</a>.<br>
-                                <i class="fas fa-tv"></i><b>Kind</b>: TV Show, <i class="far fa-copyright"></i><b>Network</b>: ABC, <i class="far fa-calendar-alt"></i><b>Originally Aired</b>: January 20, 2010, <i class="fas fa-info-circle"></i><b>Found</b>: October 20, 2019, <i class="far fa-clock"></i><b>Timestamp</b>: ~21:50.
+                                <i class="fas fa-tv"></i><b>Type</b>: TV Show, <i class="far fa-copyright"></i><b>Network</b>: ABC, <i class="far fa-calendar-alt"></i><b>Originally Aired</b>: January 20, 2010, <i class="fas fa-info-circle"></i><b>Found</b>: October 20, 2019, <i class="far fa-clock"></i><b>Timestamp</b>: ~21:50.
                               </p>
                         </div>
                     </div>
