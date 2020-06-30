@@ -1,0 +1,61 @@
+html, body {
+    width: 100%;
+}
+
+.jumbotron {
+    padding: 1rem 1rem;
+}
+
+.container {
+    padding-top: 70px;
+}
+
+nav > .container {
+    padding-top: 0px;
+}
+
+@media (max-width: 720px) {
+ .table th,
+ .table td {
+     padding: .3em !important;
+  }
+}
+
+.fas {
+  display: inline-block;
+  margin-right: 0.3em;
+}
+.fab {
+  display: inline-block;
+  margin-right: 0.3em;
+}
+.far {
+  display: inline-block;
+  margin-right: 0.3em;
+}
+
+.carousel {
+  position: fixed;
+}
+
+@media (min-width: 992px) {
+  .modal-dialog {
+    max-width: 65%;
+  }
+}
+
+.carousel-caption {
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    text-align: center;
+    background-color: #ffffffc2;
+    color: #000;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.carousel-caption > h5 {
+    margin-bottom: 0px;
+}
